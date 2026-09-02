@@ -1,0 +1,98 @@
+/* Экземпляры классов командной оболочки, загрузчика,
+   драйвера устройства и системного вызова */
+
+bash
+<- concept_shell;
+=> nrel_main_idtf:
+	[Bash]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Командная оболочка проекта GNU, используемая по умолчанию в большинстве дистрибутивов Linux. Поддерживает сценарии, историю команд и подстановку имён файлов.]
+	(* <- lang_ru;; *);
+=> nrel_license: gpl_v3;;
+
+zsh
+<- concept_shell;
+=> nrel_main_idtf:
+	[Zsh]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Командная оболочка, применяемая по умолчанию в macOS начиная с версии Catalina. Отличается развитыми средствами автодополнения.]
+	(* <- lang_ru;; *);;
+
+powershell
+<- concept_shell;
+=> nrel_main_idtf:
+	[PowerShell]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Командная оболочка и язык сценариев корпорации Microsoft. В отличие от текстовых оболочек Unix, передаёт между командами объекты, а не строки.]
+	(* <- lang_ru;; *);
+=> nrel_developer: microsoft;;
+
+grub
+<- concept_bootloader;
+=> nrel_main_idtf:
+	[GRUB]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Загрузчик проекта GNU, позволяющий выбирать между несколькими установленными операционными системами при запуске компьютера.]
+	(* <- lang_ru;; *);
+=> nrel_license: gpl_v3;;
+
+windows_boot_manager
+<- concept_bootloader;
+=> nrel_main_idtf:
+	[Диспетчер загрузки Windows]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Штатный загрузчик операционных систем семейства Windows NT, размещающий ядро в оперативной памяти и передающий ему управление.]
+	(* <- lang_ru;; *);
+=> nrel_developer: microsoft;;
+
+nouveau_driver
+<- concept_device_driver;
+=> nrel_main_idtf:
+	[Nouveau]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Свободный драйвер видеокарт NVIDIA, разрабатываемый сообществом и включённый в состав ядра Linux.]
+	(* <- lang_ru;; *);
+=> nrel_license: gpl_v2;;
+
+nvidia_proprietary_driver
+<- concept_device_driver;
+=> nrel_main_idtf:
+	[проприетарный драйвер NVIDIA]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Закрытый драйвер видеокарт, выпускаемый самой компанией NVIDIA. Обеспечивает более полную поддержку возможностей оборудования, чем свободные аналоги.]
+	(* <- lang_ru;; *);
+=> nrel_license: proprietary_license;;
+
+syscall_fork
+<- concept_system_call;
+=> nrel_main_idtf:
+	[fork]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Системный вызов Unix, создающий новый процесс путём копирования адресного пространства вызывающего процесса.]
+	(* <- lang_ru;; *);;
+
+syscall_open
+<- concept_system_call;
+=> nrel_main_idtf:
+	[open]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Системный вызов, открывающий файл и возвращающий процессу файловый дескриптор для дальнейших операций.]
+	(* <- lang_ru;; *);;
+
+syscall_read
+<- concept_system_call;
+=> nrel_main_idtf:
+	[read]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Системный вызов, читающий данные из файла или иного источника по ранее полученному файловому дескриптору.]
+	(* <- lang_ru;; *);;

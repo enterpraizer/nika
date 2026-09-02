@@ -1,0 +1,16 @@
+/* Подкласс операционных систем по способу комплектования */
+
+concept_linux_distribution
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[дистрибутив Linux]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Linux distribution]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Операционная система, построенная на основе ядра Linux и включающая набор системных и прикладных программ, а также средства установки и управления пакетами.]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	concept_operating_system;;

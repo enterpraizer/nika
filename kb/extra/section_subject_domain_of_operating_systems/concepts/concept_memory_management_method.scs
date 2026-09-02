@@ -1,0 +1,14 @@
+/* Класс объектов исследования */
+
+concept_memory_management_method
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[метод управления памятью]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[memory management method]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Способ распределения оперативной памяти между процессами и отображения логических адресов в физические, применяемый операционной системой.]
+	(* <- lang_ru;; *);;

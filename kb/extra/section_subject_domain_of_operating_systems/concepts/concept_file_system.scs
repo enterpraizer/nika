@@ -1,0 +1,20 @@
+/* Класс объектов исследования: компонент операционной системы */
+
+concept_file_system
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[файловая система]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[file system]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Порядок организации, хранения и именования данных на носителе информации. Определяет структуру каталогов, метаданные файлов и способ распределения дискового пространства.]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_journaling_file_system;;
+	*);;

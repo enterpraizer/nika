@@ -1,0 +1,16 @@
+/* Подкласс ядер по архитектуре */
+
+concept_hybrid_kernel
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[гибридное ядро]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[hybrid kernel]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ядро, сочетающее свойства монолитного ядра и микроядра: часть подсистем вынесена из привилегированного режима, однако основные службы для быстродействия оставлены в пространстве ядра.]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	concept_kernel;;

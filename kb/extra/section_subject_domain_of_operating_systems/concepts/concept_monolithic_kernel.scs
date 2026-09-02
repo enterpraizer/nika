@@ -1,0 +1,16 @@
+/* Подкласс ядер по архитектуре */
+
+concept_monolithic_kernel
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[монолитное ядро]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[monolithic kernel]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Ядро, в котором все подсистемы выполняются в едином адресном пространстве привилегированного режима. Обеспечивает высокую производительность, но ошибка в любом компоненте способна нарушить работу всей системы.]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	concept_kernel;;

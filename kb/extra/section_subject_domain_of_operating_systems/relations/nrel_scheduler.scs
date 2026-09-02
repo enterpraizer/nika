@@ -1,0 +1,47 @@
+/* Отношение между ядром и его планировщиком */
+
+nrel_scheduler
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[планировщик*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[scheduler*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_kernel;
+=> nrel_second_domain: concept_process_scheduler;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_kernel;
+				concept_process_scheduler
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (планировщик*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Планировщик* - бинарное ориентированное отношение, связывающее ядро операционной системы и планировщик, распределяющий процессорное время между процессами.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_kernel;
+				concept_process_scheduler
+			};;
+	*);;

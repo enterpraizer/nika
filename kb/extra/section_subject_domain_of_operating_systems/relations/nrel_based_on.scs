@@ -1,0 +1,46 @@
+/* Отношение происхождения между операционными системами */
+
+nrel_based_on
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+=> nrel_main_idtf:
+	[основана на*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[based on*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_operating_system;
+=> nrel_second_domain: concept_operating_system;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_operating_system;
+				concept_operating_system
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (основана на*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Основана на* - бинарное ориентированное отношение, связывающее операционную систему и ту операционную систему, исходный код или пакетная база которой послужили основой для её создания.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_operating_system;
+				concept_operating_system
+			};;
+	*);;

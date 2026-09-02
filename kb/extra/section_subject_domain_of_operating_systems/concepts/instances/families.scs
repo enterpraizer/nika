@@ -1,0 +1,19 @@
+/* Экземпляры класса "семейство операционных систем" */
+
+family_unix_like
+<- concept_operating_system_family;
+=> nrel_main_idtf:
+	[Unix-подобные операционные системы]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Семейство операционных систем, следующих принципам и программному интерфейсу системы Unix. Включает дистрибутивы Linux, системы семейства BSD и macOS.]
+	(* <- lang_ru;; *);;
+
+family_windows_nt
+<- concept_operating_system_family;
+=> nrel_main_idtf:
+	[семейство Windows NT]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Семейство операционных систем корпорации Microsoft, построенных на гибридном ядре NT. Ведёт начало от Windows NT 3.1, выпущенной в 1993 году.]
+	(* <- lang_ru;; *);;

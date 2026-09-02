@@ -1,0 +1,96 @@
+/* Раздел базы знаний, соответствующий предметной области
+   операционных систем. Лабораторная работа №1 по курсу ТиИСПИС.
+   Все системные идентификаторы записаны латиницей согласно
+   требованиям Стандарта Технологии OSTIS. */
+
+section_subject_domain_of_operating_systems
+=> nrel_main_idtf:
+	[Раздел. Предметная область операционных систем]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Section. Subject domain of operating systems]
+	(* <- lang_en;; *);
+<- atomic_section;;
+
+/* Структура предметной области: максимальный класс объектов
+   исследования, прочие классы объектов исследования
+   и исследуемые отношения */
+
+section_subject_domain_of_operating_systems = [*
+	subject_domain_of_operating_systems
+	=> nrel_main_idtf:
+		[Предметная область операционных систем]
+		(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Subject domain of operating systems]
+		(* <- lang_en;; *);
+	<- subject_domain;
+	-> rrel_maximum_studied_object_class:
+		concept_operating_system;
+	-> rrel_not_maximum_studied_object_class:
+		concept_bootloader;
+		concept_desktop_operating_system;
+		concept_device_driver;
+		concept_embedded_operating_system;
+		concept_file_system;
+		concept_hybrid_kernel;
+		concept_journaling_file_system;
+		concept_kernel;
+		concept_linux_distribution;
+		concept_memory_management_method;
+		concept_microkernel;
+		concept_mobile_operating_system;
+		concept_monolithic_kernel;
+		concept_operating_system_family;
+		concept_process;
+		concept_process_scheduler;
+		concept_real_time_operating_system;
+		concept_scheduling_algorithm;
+		concept_server_operating_system;
+		concept_shell;
+		concept_system_call;
+		concept_thread;
+	-> rrel_explored_relation:
+		nrel_based_on;
+		nrel_bootloader;
+		nrel_default_file_system;
+		nrel_default_shell;
+		nrel_developer;
+		nrel_device_driver;
+		nrel_kernel;
+		nrel_license;
+		nrel_memory_management_method;
+		nrel_operating_system_family;
+		nrel_scheduler;
+		nrel_scheduling_algorithm;
+		nrel_supported_architecture;
+		nrel_supported_file_system;
+		nrel_system_call;
+		nrel_thread;;
+*];;
+
+/* Ключевые sc-элементы раздела */
+
+section_subject_domain_of_operating_systems
+-> rrel_key_sc_element:
+	subject_domain_of_operating_systems;
+	concept_operating_system;
+	concept_software_license;
+	concept_processor_architecture;
+	concept_software_developer;
+	nrel_based_on;
+	nrel_bootloader;
+	nrel_default_file_system;
+	nrel_default_shell;
+	nrel_developer;
+	nrel_device_driver;
+	nrel_kernel;
+	nrel_license;
+	nrel_memory_management_method;
+	nrel_operating_system_family;
+	nrel_scheduler;
+	nrel_scheduling_algorithm;
+	nrel_supported_architecture;
+	nrel_supported_file_system;
+	nrel_system_call;
+	nrel_thread;;

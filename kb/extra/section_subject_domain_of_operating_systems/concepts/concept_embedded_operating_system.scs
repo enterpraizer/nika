@@ -1,0 +1,16 @@
+/* Подкласс операционных систем по назначению */
+
+concept_embedded_operating_system
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[встраиваемая операционная система]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[embedded operating system]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Операционная система, интегрированная в специализированное устройство и решающая фиксированный набор задач. Отличается малым объёмом занимаемой памяти.]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	concept_operating_system;;

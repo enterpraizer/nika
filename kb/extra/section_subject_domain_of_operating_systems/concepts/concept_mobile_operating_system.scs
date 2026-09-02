@@ -1,0 +1,16 @@
+/* Подкласс операционных систем по назначению */
+
+concept_mobile_operating_system
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[мобильная операционная система]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[mobile operating system]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Операционная система для смартфонов, планшетов и иных портативных устройств. Учитывает ограничения по энергопотреблению и рассчитана на сенсорный ввод.]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	concept_operating_system;;

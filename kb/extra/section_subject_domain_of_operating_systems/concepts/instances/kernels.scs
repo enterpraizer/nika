@@ -1,0 +1,56 @@
+/* Экземпляры класса "ядро операционной системы" */
+
+linux_kernel
+<- concept_kernel;
+<- concept_monolithic_kernel;
+=> nrel_main_idtf:
+	[ядро Linux]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Монолитное ядро, разработанное Линусом Торвальдсом и впервые опубликованное в 1991 году. Поддерживает загружаемые модули, что позволяет добавлять драйверы без перекомпиляции ядра.]
+	(* <- lang_ru;; *);
+=> nrel_developer: linus_torvalds;
+=> nrel_license: gpl_v2;
+=> nrel_scheduler: cfs_scheduler;
+=> nrel_memory_management_method: paging;
+=> nrel_memory_management_method: swapping;
+=> nrel_device_driver: nouveau_driver;
+=> nrel_system_call: syscall_fork;
+=> nrel_system_call: syscall_open;
+=> nrel_system_call: syscall_read;;
+
+windows_nt_kernel
+<- concept_kernel;
+<- concept_hybrid_kernel;
+=> nrel_main_idtf:
+	[ядро Windows NT]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Гибридное ядро семейства операционных систем Windows NT. Сочетает элементы монолитной архитектуры с выделением части подсистем в отдельные компоненты пользовательского режима.]
+	(* <- lang_ru;; *);
+=> nrel_developer: microsoft;
+=> nrel_scheduler: windows_thread_scheduler;
+=> nrel_memory_management_method: paging;;
+
+xnu
+<- concept_kernel;
+<- concept_hybrid_kernel;
+=> nrel_main_idtf:
+	[XNU]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Гибридное ядро операционной системы macOS, объединяющее микроядро Mach и подсистемы, заимствованные из FreeBSD.]
+	(* <- lang_ru;; *);
+=> nrel_developer: apple;
+=> nrel_memory_management_method: paging;;
+
+qnx_neutrino_kernel
+<- concept_kernel;
+<- concept_microkernel;
+=> nrel_main_idtf:
+	[ядро QNX Neutrino]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Микроядро операционной системы QNX. В привилегированном режиме выполняет только планирование, межпроцессное взаимодействие и обработку прерываний.]
+	(* <- lang_ru;; *);
+=> nrel_memory_management_method: paging;;

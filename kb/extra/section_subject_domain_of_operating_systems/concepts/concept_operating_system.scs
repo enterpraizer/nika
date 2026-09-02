@@ -1,0 +1,28 @@
+/* Максимальный класс объектов исследования предметной области */
+
+concept_operating_system
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[операционная система]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[operating system]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Комплекс взаимосвязанных программ, предназначенных для управления
+	 ресурсами вычислительного устройства и организации взаимодействия
+	 с пользователем. Операционная система обеспечивает выполнение
+	 прикладных программ, распределение процессорного времени
+	 и оперативной памяти, а также доступ к устройствам ввода-вывода.]
+	(* <- lang_ru;; *);
+<= nrel_subdividing:
+	...
+	(*
+		<- sc_node_tuple;;
+		-> concept_desktop_operating_system;;
+		-> concept_server_operating_system;;
+		-> concept_mobile_operating_system;;
+		-> concept_embedded_operating_system;;
+		-> concept_real_time_operating_system;;
+	*);;

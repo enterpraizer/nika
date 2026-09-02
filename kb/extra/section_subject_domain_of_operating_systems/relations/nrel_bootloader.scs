@@ -1,0 +1,47 @@
+/* Отношение между операционной системой и её загрузчиком */
+
+nrel_bootloader
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[загрузчик*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[bootloader*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_operating_system;
+=> nrel_second_domain: concept_bootloader;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_operating_system;
+				concept_bootloader
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (загрузчик*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Загрузчик* - бинарное ориентированное отношение, связывающее операционную систему и программу, обеспечивающую загрузку её ядра в оперативную память.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_operating_system;
+				concept_bootloader
+			};;
+	*);;

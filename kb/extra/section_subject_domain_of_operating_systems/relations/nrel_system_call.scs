@@ -1,0 +1,47 @@
+/* Отношение между ядром и предоставляемым им системным вызовом */
+
+nrel_system_call
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[системный вызов*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[system call*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_kernel;
+=> nrel_second_domain: concept_system_call;
+=> nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+			{
+				concept_kernel;
+				concept_system_call
+			};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Опр. (системный вызов*)]
+			(* <- lang_ru;; *);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[Системный вызов* - бинарное ориентированное отношение, связывающее ядро операционной системы и системный вызов, который оно предоставляет прикладным программам.]
+					(* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			{
+				concept_kernel;
+				concept_system_call
+			};;
+	*);;

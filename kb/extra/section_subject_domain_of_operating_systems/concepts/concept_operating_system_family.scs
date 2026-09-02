@@ -1,0 +1,14 @@
+/* Класс объектов исследования */
+
+concept_operating_system_family
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[семейство операционных систем]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[operating system family]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Множество операционных систем, имеющих общее происхождение, сходную архитектуру и совместимый программный интерфейс.]
+	(* <- lang_ru;; *);;

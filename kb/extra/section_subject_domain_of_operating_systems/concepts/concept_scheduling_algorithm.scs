@@ -1,0 +1,14 @@
+/* Класс объектов исследования */
+
+concept_scheduling_algorithm
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[алгоритм планирования]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[scheduling algorithm]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Правило, по которому планировщик выбирает следующий процесс для выполнения на процессоре и определяет длительность предоставляемого ему кванта времени.]
+	(* <- lang_ru;; *);;

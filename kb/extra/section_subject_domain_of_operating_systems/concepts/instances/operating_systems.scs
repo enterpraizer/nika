@@ -1,0 +1,135 @@
+/* Экземпляры классов операционных систем.
+   Экземпляры связаны между собой относительными понятиями
+   предметной области: ядром, семейством, разработчиком,
+   лицензией, файловой системой, оболочкой и загрузчиком. */
+
+ubuntu
+<- concept_operating_system;
+<- concept_linux_distribution;
+<- concept_desktop_operating_system;
+=> nrel_main_idtf:
+	[Ubuntu]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Дистрибутив операционной системы Linux, разрабатываемый компанией Canonical с 2004 года. Ориентирован на простоту установки и настройки, выпускается по полугодовому графику с версиями долгосрочной поддержки раз в два года.]
+	(* <- lang_ru;; *);
+=> nrel_based_on: debian;
+=> nrel_kernel: linux_kernel;
+=> nrel_operating_system_family: family_unix_like;
+=> nrel_developer: canonical;
+=> nrel_license: gpl_v3;
+=> nrel_default_file_system: ext4;
+=> nrel_supported_file_system: fat32;
+=> nrel_default_shell: bash;
+=> nrel_bootloader: grub;
+=> nrel_supported_architecture: x86_64;
+=> nrel_supported_architecture: arm64;;
+
+debian
+<- concept_operating_system;
+<- concept_linux_distribution;
+<- concept_server_operating_system;
+=> nrel_main_idtf:
+	[Debian]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Один из старейших дистрибутивов Linux, разрабатываемый сообществом добровольцев с 1993 года. Служит основой для множества производных дистрибутивов.]
+	(* <- lang_ru;; *);
+=> nrel_kernel: linux_kernel;
+=> nrel_operating_system_family: family_unix_like;
+=> nrel_license: gpl_v2;
+=> nrel_default_file_system: ext4;
+=> nrel_default_shell: bash;
+=> nrel_bootloader: grub;
+=> nrel_supported_architecture: x86_64;;
+
+android
+<- concept_operating_system;
+<- concept_mobile_operating_system;
+=> nrel_main_idtf:
+	[Android]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Мобильная операционная система, основанная на ядре Linux и разрабатываемая компанией Google. Первый выпуск состоялся в 2008 году.]
+	(* <- lang_ru;; *);
+=> nrel_kernel: linux_kernel;
+=> nrel_operating_system_family: family_unix_like;
+=> nrel_developer: google;
+=> nrel_supported_architecture: arm64;;
+
+windows_11
+<- concept_operating_system;
+<- concept_desktop_operating_system;
+=> nrel_main_idtf:
+	[Windows 11]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Настольная операционная система, выпущенная корпорацией Microsoft в 2021 году. Относится к семейству Windows NT и распространяется по проприетарной лицензии.]
+	(* <- lang_ru;; *);
+=> nrel_kernel: windows_nt_kernel;
+=> nrel_operating_system_family: family_windows_nt;
+=> nrel_developer: microsoft;
+=> nrel_license: proprietary_license;
+=> nrel_default_file_system: ntfs;
+=> nrel_supported_file_system: fat32;
+=> nrel_default_shell: powershell;
+=> nrel_bootloader: windows_boot_manager;
+=> nrel_supported_architecture: x86_64;;
+
+windows_server_2022
+<- concept_operating_system;
+<- concept_server_operating_system;
+=> nrel_main_idtf:
+	[Windows Server 2022]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Серверная операционная система семейства Windows NT, предназначенная для развёртывания сетевых служб и виртуализации.]
+	(* <- lang_ru;; *);
+=> nrel_kernel: windows_nt_kernel;
+=> nrel_operating_system_family: family_windows_nt;
+=> nrel_developer: microsoft;
+=> nrel_license: proprietary_license;
+=> nrel_default_file_system: ntfs;;
+
+macos
+<- concept_operating_system;
+<- concept_desktop_operating_system;
+=> nrel_main_idtf:
+	[macOS]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Настольная операционная система корпорации Apple, построенная на гибридном ядре XNU и берущая начало от системы NeXTSTEP.]
+	(* <- lang_ru;; *);
+=> nrel_kernel: xnu;
+=> nrel_operating_system_family: family_unix_like;
+=> nrel_developer: apple;
+=> nrel_license: proprietary_license;
+=> nrel_default_file_system: apfs;
+=> nrel_default_shell: zsh;
+=> nrel_supported_architecture: arm64;;
+
+freebsd
+<- concept_operating_system;
+<- concept_server_operating_system;
+=> nrel_main_idtf:
+	[FreeBSD]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Свободная операционная система семейства Unix, ведущая происхождение от Berkeley Software Distribution. Распространяется по лицензии BSD.]
+	(* <- lang_ru;; *);
+=> nrel_operating_system_family: family_unix_like;
+=> nrel_license: bsd_license;
+=> nrel_supported_architecture: x86_64;;
+
+qnx
+<- concept_operating_system;
+<- concept_real_time_operating_system;
+<- concept_embedded_operating_system;
+=> nrel_main_idtf:
+	[QNX]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Коммерческая операционная система реального времени с микроядерной архитектурой. Применяется во встраиваемых системах, в том числе в автомобильной электронике.]
+	(* <- lang_ru;; *);
+=> nrel_kernel: qnx_neutrino_kernel;
+=> nrel_license: proprietary_license;;

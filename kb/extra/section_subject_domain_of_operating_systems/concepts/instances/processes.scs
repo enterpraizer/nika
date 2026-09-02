@@ -1,0 +1,30 @@
+/* Экземпляры классов процесса и потока выполнения */
+
+systemd
+<- concept_process;
+=> nrel_main_idtf:
+	[systemd]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Система инициализации, запускаемая ядром Linux первым процессом с идентификатором 1. Отвечает за запуск и контроль остальных системных служб.]
+	(* <- lang_ru;; *);
+=> nrel_license: gpl_v2;
+=> nrel_thread: ksoftirqd;;
+
+kthreadd
+<- concept_process;
+=> nrel_main_idtf:
+	[kthreadd]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Процесс ядра Linux с идентификатором 2, являющийся родительским для всех остальных потоков ядра.]
+	(* <- lang_ru;; *);;
+
+ksoftirqd
+<- concept_thread;
+=> nrel_main_idtf:
+	[ksoftirqd]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Поток ядра Linux, выполняющий отложенную обработку программных прерываний. Создаётся отдельно для каждого процессорного ядра.]
+	(* <- lang_ru;; *);;

@@ -1,0 +1,16 @@
+/* Подкласс операционных систем по назначению */
+
+concept_desktop_operating_system
+<- sc_node_class;
+<- concept_wit_entity;
+=> nrel_main_idtf:
+	[настольная операционная система]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[desktop operating system]
+	(* <- lang_en;; *);
+=> nrel_note:
+	[Операционная система, предназначенная для персональных компьютеров и рабочих станций. Основное внимание уделяется графическому интерфейсу пользователя и поддержке широкого спектра периферийных устройств.]
+	(* <- lang_ru;; *);
+<= nrel_inclusion:
+	concept_operating_system;;
