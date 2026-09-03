@@ -1,0 +1,36 @@
+/* Класс сообщений, выделяемый классификатором Wit.ai.
+   Содержимое nrel_wit_ai_idtf должно посимвольно совпадать
+   с именем intent в приложении Wit.ai. */
+
+concept_message_about_kernel
+<- sc_node_class;
+<- concept_intent_possible_class;
+=> nrel_main_idtf:
+	[сообщение о ядре операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[message about operating system kernel]
+	(* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_kernel];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (сообщение о ядре операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение о ядре операционной системы - атомарное сообщение, содержащее операционную систему, ядро которой требуется найти.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message;
+			concept_operating_system;
+			concept_kernel
+		};;
+	*);;

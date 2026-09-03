@@ -1,0 +1,3657 @@
+{
+ "app": {
+  "name": "tiispis_os_2323",
+  "id": "fd59f5e8-276d-40b6-856f-4039225307ee",
+  "lang": "ru"
+ },
+ "intents": [
+  {
+   "id": "1589507149385307",
+   "name": "about_developer"
+  },
+  {
+   "id": "1692593415168674",
+   "name": "about_entity"
+  },
+  {
+   "id": "1401496485259665",
+   "name": "about_file_system"
+  },
+  {
+   "id": "1629914718554282",
+   "name": "about_kernel"
+  },
+  {
+   "id": "28039603419021856",
+   "name": "greeting"
+  },
+  {
+   "id": "1049626351024688",
+   "name": "subdividing"
+  }
+ ],
+ "entities": [
+  {
+   "id": "28129819753347641",
+   "name": "rrel_entity"
+  }
+ ],
+ "utterances": [
+  {
+   "text": "Какое ядро у Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 19,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Привет!",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Какую файловую систему использует Debian?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 34,
+     "end": 40,
+     "body": "Debian",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Какую файловую систему использует macOS?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 34,
+     "end": 39,
+     "body": "macOS",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Кто разработал PowerShell?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 15,
+     "end": 25,
+     "body": "PowerShell",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Хай",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Какая файловая система в Debian?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 25,
+     "end": 31,
+     "body": "Debian",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Какую файловую систему использует Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 34,
+     "end": 44,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Добрый день",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Приветствую",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Какая файловая система в macOS?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 25,
+     "end": 30,
+     "body": "macOS",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Какая файловая система в Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 25,
+     "end": 31,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Здравствуй",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Кто является разработчиком ядро Linux?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 27,
+     "end": 37,
+     "body": "ядро Linux",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Какую файловую систему использует Windows Server 2022?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 34,
+     "end": 53,
+     "body": "Windows Server 2022",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Какую файловую систему использует Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 34,
+     "end": 40,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Здравствуйте",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Кто является разработчиком PowerShell?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 27,
+     "end": 37,
+     "body": "PowerShell",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Привет",
+   "entities": [],
+   "traits": [],
+   "intent": {
+    "id": "28039603419021856",
+    "name": "greeting"
+   }
+  },
+  {
+   "text": "Какая файловая система в Windows Server 2022?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 25,
+     "end": 44,
+     "body": "Windows Server 2022",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Какая файловая система в Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 25,
+     "end": 35,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1401496485259665",
+    "name": "about_file_system"
+   }
+  },
+  {
+   "text": "Что такое поток выполнения?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 26,
+     "body": "поток выполнения",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о семейство Windows NT",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 31,
+     "body": "семейство Windows NT",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое системный вызов?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 25,
+     "body": "системный вызов",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Unix-подобные операционные системы",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 45,
+     "body": "Unix-подобные операционные системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ext4?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "ext4",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о NTFS",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "NTFS",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое лицензия программного обеспечения?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 43,
+     "body": "лицензия программного обеспечения",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Unix-подобные операционные системы?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 44,
+     "body": "Unix-подобные операционные системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о разработчик программного обеспечения",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 47,
+     "body": "разработчик программного обеспечения",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое серверная операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 40,
+     "body": "серверная операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое семейство Windows NT?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 30,
+     "body": "семейство Windows NT",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое разработчик программного обеспечения?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 46,
+     "body": "разработчик программного обеспечения",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о системный вызов",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 26,
+     "body": "системный вызов",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о поток выполнения",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 27,
+     "body": "поток выполнения",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ext4",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "ext4",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое NTFS?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "NTFS",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о серверная операционная система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 41,
+     "body": "серверная операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о лицензия программного обеспечения",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 44,
+     "body": "лицензия программного обеспечения",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое командная оболочка?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 28,
+     "body": "командная оболочка",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о командная оболочка",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 29,
+     "body": "командная оболочка",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ядро операционной системы?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 35,
+     "body": "ядро операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о файловая система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 27,
+     "body": "файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о дистрибутив Linux",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 28,
+     "body": "дистрибутив Linux",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое загрузчик операционной системы?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 40,
+     "body": "загрузчик операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о загрузчик операционной системы",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 41,
+     "body": "загрузчик операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое журналируемая файловая система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 40,
+     "body": "журналируемая файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о журналируемая файловая система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 41,
+     "body": "журналируемая файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о метод управления памятью",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 35,
+     "body": "метод управления памятью",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о гибридное ядро",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 25,
+     "body": "гибридное ядро",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о настольная операционная система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 42,
+     "body": "настольная операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое настольная операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 41,
+     "body": "настольная операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое встраиваемая операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 43,
+     "body": "встраиваемая операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ядро операционной системы",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 36,
+     "body": "ядро операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое гибридное ядро?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 24,
+     "body": "гибридное ядро",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое файловая система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 26,
+     "body": "файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о драйвер устройства",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 29,
+     "body": "драйвер устройства",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о встраиваемая операционная система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 44,
+     "body": "встраиваемая операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое дистрибутив Linux?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 27,
+     "body": "дистрибутив Linux",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое метод управления памятью?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 34,
+     "body": "метод управления памятью",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое драйвер устройства?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 28,
+     "body": "драйвер устройства",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о микроядро",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 20,
+     "body": "микроядро",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о архитектура процессора",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 33,
+     "body": "архитектура процессора",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое микроядро?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 19,
+     "body": "микроядро",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о монолитное ядро",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 26,
+     "body": "монолитное ядро",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое семейство операционных систем?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 39,
+     "body": "семейство операционных систем",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое мобильная операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 40,
+     "body": "мобильная операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 30,
+     "body": "операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое процесс?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 17,
+     "body": "процесс",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о мобильная операционная система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 41,
+     "body": "мобильная операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о планировщик процессов",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 32,
+     "body": "планировщик процессов",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о семейство операционных систем",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 40,
+     "body": "семейство операционных систем",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое операционная система реального времени?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 48,
+     "body": "операционная система реального времени",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о алгоритм планирования",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 32,
+     "body": "алгоритм планирования",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о процесс",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 18,
+     "body": "процесс",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое монолитное ядро?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 25,
+     "body": "монолитное ядро",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о операционная система",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 31,
+     "body": "операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое планировщик процессов?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 31,
+     "body": "планировщик процессов",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое алгоритм планирования?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 31,
+     "body": "алгоритм планирования",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое архитектура процессора?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 32,
+     "body": "архитектура процессора",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о операционная система реального времени",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 49,
+     "body": "операционная система реального времени",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о APFS",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "APFS",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое XNU?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 13,
+     "body": "XNU",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое FAT32?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 15,
+     "body": "FAT32",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ядро Linux",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 21,
+     "body": "ядро Linux",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ядро Windows NT",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 26,
+     "body": "ядро Windows NT",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Android",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 18,
+     "body": "Android",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о XNU",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 14,
+     "body": "XNU",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 16,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое APFS?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "APFS",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о FAT32",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 16,
+     "body": "FAT32",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ядро Windows NT?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 25,
+     "body": "ядро Windows NT",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ядро QNX Neutrino",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 28,
+     "body": "ядро QNX Neutrino",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Debian",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 17,
+     "body": "Debian",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Android?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 17,
+     "body": "Android",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ядро Linux?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 20,
+     "body": "ядро Linux",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Debian?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 16,
+     "body": "Debian",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ядро QNX Neutrino?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 27,
+     "body": "ядро QNX Neutrino",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Ubuntu",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 17,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Windows 11",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 21,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 20,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "На каком ядре работает Android?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 30,
+     "body": "Android",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Какое ядро у Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 23,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Кто разработал Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 15,
+     "end": 25,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "На каком ядре работает Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 29,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Кто разработал Android?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 15,
+     "end": 22,
+     "body": "Android",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Кто является разработчиком Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 27,
+     "end": 33,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "На каком ядре работает QNX?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 26,
+     "body": "QNX",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Какое ядро у Android?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 20,
+     "body": "Android",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "На каком ядре работает Debian?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 29,
+     "body": "Debian",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Какое ядро у Debian?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 19,
+     "body": "Debian",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Кто является разработчиком Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 27,
+     "end": 37,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "На каком ядре работает Windows 11?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 33,
+     "body": "Windows 11",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Кто является разработчиком Android?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 27,
+     "end": 34,
+     "body": "Android",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Кто разработал Ubuntu?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 15,
+     "end": 21,
+     "body": "Ubuntu",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Кто разработал ядро Linux?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 15,
+     "end": 25,
+     "body": "ядро Linux",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1589507149385307",
+    "name": "about_developer"
+   }
+  },
+  {
+   "text": "Какое ядро у QNX?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 16,
+     "body": "QNX",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1629914718554282",
+    "name": "about_kernel"
+   }
+  },
+  {
+   "text": "Что такое Microsoft?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 19,
+     "body": "Microsoft",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое GNU GPL версии 2?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 26,
+     "body": "GNU GPL версии 2",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Google?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 16,
+     "body": "Google",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о страничная организация памяти",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 40,
+     "body": "страничная организация памяти",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Диспетчер загрузки Windows?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 36,
+     "body": "Диспетчер загрузки Windows",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Apple",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 16,
+     "body": "Apple",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое подкачка страниц?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 26,
+     "body": "подкачка страниц",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о PowerShell",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 21,
+     "body": "PowerShell",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Apple?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 15,
+     "body": "Apple",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое алгоритм справедливого планирования?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 45,
+     "body": "алгоритм справедливого планирования",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о GNU GPL версии 2",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 27,
+     "body": "GNU GPL версии 2",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Windows Server 2022?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 29,
+     "body": "Windows Server 2022",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое страничная организация памяти?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 39,
+     "body": "страничная организация памяти",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Bash",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "Bash",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Bash?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "Bash",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Диспетчер загрузки Windows",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 37,
+     "body": "Диспетчер загрузки Windows",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое сегментная организация памяти?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 39,
+     "body": "сегментная организация памяти",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о FreeBSD",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 18,
+     "body": "FreeBSD",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Линус Торвальдс",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 26,
+     "body": "Линус Торвальдс",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о алгоритм справедливого планирования",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 46,
+     "body": "алгоритм справедливого планирования",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о подкачка страниц",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 27,
+     "body": "подкачка страниц",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Windows Server 2022",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 30,
+     "body": "Windows Server 2022",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Microsoft",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 20,
+     "body": "Microsoft",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о круговой алгоритм",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 28,
+     "body": "круговой алгоритм",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое PowerShell?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 20,
+     "body": "PowerShell",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о сегментная организация памяти",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 40,
+     "body": "сегментная организация памяти",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Zsh",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 14,
+     "body": "Zsh",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Линус Торвальдс?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 25,
+     "body": "Линус Торвальдс",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое FreeBSD?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 17,
+     "body": "FreeBSD",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Canonical",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 20,
+     "body": "Canonical",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое круговой алгоритм?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 27,
+     "body": "круговой алгоритм",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о GRUB",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "GRUB",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое GRUB?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "GRUB",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое QNX?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 13,
+     "body": "QNX",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Google",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 17,
+     "body": "Google",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Zsh?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 13,
+     "body": "Zsh",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о QNX",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 14,
+     "body": "QNX",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Canonical?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 19,
+     "body": "Canonical",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое kthreadd?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 18,
+     "body": "kthreadd",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое GNU GPL версии 3?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 26,
+     "body": "GNU GPL версии 3",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ksoftirqd?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 19,
+     "body": "ksoftirqd",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое ARM64?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 15,
+     "body": "ARM64",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Completely Fair Scheduler?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 35,
+     "body": "Completely Fair Scheduler",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое лицензия BSD?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 22,
+     "body": "лицензия BSD",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о systemd",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 18,
+     "body": "systemd",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Completely Fair Scheduler",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 36,
+     "body": "Completely Fair Scheduler",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое проприетарная лицензия?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 32,
+     "body": "проприетарная лицензия",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о проприетарная лицензия",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 33,
+     "body": "проприетарная лицензия",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о лицензия BSD",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 23,
+     "body": "лицензия BSD",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ksoftirqd",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 20,
+     "body": "ksoftirqd",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о kthreadd",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 19,
+     "body": "kthreadd",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о GNU GPL версии 3",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 27,
+     "body": "GNU GPL версии 3",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое systemd?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 17,
+     "body": "systemd",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое планировщик потоков Windows?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 37,
+     "body": "планировщик потоков Windows",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о ARM64",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 16,
+     "body": "ARM64",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое x86-64?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 16,
+     "body": "x86-64",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о планировщик потоков Windows",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 38,
+     "body": "планировщик потоков Windows",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о x86-64",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 17,
+     "body": "x86-64",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "На что декомпозируется операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 43,
+     "body": "операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "На что декомпозируется файловая система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 39,
+     "body": "файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Расскажи о read",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "read",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Какие виды имеет операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 17,
+     "end": 37,
+     "body": "операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Расскажи о fork",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "fork",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое open?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "open",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое проприетарный драйвер NVIDIA?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 38,
+     "body": "проприетарный драйвер NVIDIA",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о Nouveau",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 18,
+     "body": "Nouveau",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "На что декомпозируется ядро операционной системы?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 23,
+     "end": 48,
+     "body": "ядро операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Каким бывает ядро операционной системы?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 38,
+     "body": "ядро операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Что такое read?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "read",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Какие виды имеет файловая система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 17,
+     "end": 33,
+     "body": "файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Что такое fork?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 14,
+     "body": "fork",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Каким бывает файловая система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 29,
+     "body": "файловая система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Каким бывает операционная система?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 13,
+     "end": 33,
+     "body": "операционная система",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  },
+  {
+   "text": "Расскажи о проприетарный драйвер NVIDIA",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 39,
+     "body": "проприетарный драйвер NVIDIA",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Что такое Nouveau?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 10,
+     "end": 17,
+     "body": "Nouveau",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Расскажи о open",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 11,
+     "end": 15,
+     "body": "open",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1692593415168674",
+    "name": "about_entity"
+   }
+  },
+  {
+   "text": "Какие виды имеет ядро операционной системы?",
+   "entities": [
+    {
+     "id": "2472547033157144",
+     "name": "rrel_entity",
+     "role": "rrel_entity",
+     "start": 17,
+     "end": 42,
+     "body": "ядро операционной системы",
+     "entities": []
+    }
+   ],
+   "traits": [],
+   "intent": {
+    "id": "1049626351024688",
+    "name": "subdividing"
+   }
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+/* Класс сообщений, выделяемый классификатором Wit.ai.
+   Содержимое nrel_wit_ai_idtf должно посимвольно совпадать
+   с именем intent в приложении Wit.ai. */
+
+concept_message_about_file_system
+<- sc_node_class;
+<- concept_intent_possible_class;
+=> nrel_main_idtf:
+	[сообщение о файловой системе]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[message about file system]
+	(* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	[about_file_system];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (сообщение о файловой системе)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение о файловой системе - атомарное сообщение, содержащее операционную систему, файловую систему которой требуется найти.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message;
+			concept_operating_system;
+			concept_file_system
+		};;
+	*);;
