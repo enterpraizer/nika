@@ -1,0 +1,34 @@
+/* Класс фраз ответа. Конкретные фразы класса и связанные с ними
+   структуры-образцы описаны в phrases/examples/concept_phrase_about_os_developer.gwf */
+
+concept_phrase_about_os_developer
+<- sc_node_class;
+=> nrel_main_idtf:
+	[фраза о разработчике операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[phrase about operating system developer]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_phrase;
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (фраза о разработчике операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фраза о разработчике операционной системы - фраза, сообщающая, кто разрабатывает указанную операционную систему.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_phrase;
+			concept_software_developer;
+			nrel_developer
+		};;
+	*);;

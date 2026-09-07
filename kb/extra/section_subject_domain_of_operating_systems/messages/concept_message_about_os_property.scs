@@ -1,0 +1,44 @@
+/* Надкласс всех вопросов о свойствах конкретной операционной системы.
+   Правила классификации приписывают сообщению одновременно частный класс
+   вопроса и этот надкласс: членство в классе через nrel_inclusion
+   в sc-памяти автоматически не распространяется, поэтому дуга
+   принадлежности надклассу создаётся явно.
+   Надкласс используется правилом ответа третьего приоритета
+   lr_answer_about_unknown_os_property. */
+
+concept_message_about_os_property
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение о свойстве операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[message about operating system property]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_atomic_message;
+=> nrel_inclusion:
+	concept_message_about_kernel;
+	concept_message_about_developer;
+	concept_message_about_file_system;
+	concept_message_about_shell;
+	concept_message_about_license;
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (сообщение о свойстве операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение о свойстве операционной системы - атомарное сообщение, в котором указана операционная система и запрашивается значение одного из исследуемых отношений предметной области для неё.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message;
+			concept_operating_system
+		};;
+	*);;

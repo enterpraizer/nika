@@ -1,0 +1,33 @@
+/* Класс сообщений: вопрос об оболочке операционной системы по умолчанию.
+   Отвечающее правило - lr_answer_about_os_shell, отношение ЛР1 - nrel_default_shell. */
+
+concept_message_about_shell
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение об оболочке операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[message about operating system shell]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (сообщение об оболочке операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение об оболочке операционной системы - сообщение о свойстве операционной системы, в котором запрашивается оболочка, используемая в этой системе по умолчанию.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_message_about_os_property;
+			concept_operating_system;
+			concept_shell;
+			nrel_default_shell
+		};;
+	*);;

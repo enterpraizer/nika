@@ -1,0 +1,33 @@
+/* Класс сообщений: вопрос о лицензии операционной системы.
+   Отвечающее правило - lr_answer_about_os_license, отношение ЛР1 - nrel_license. */
+
+concept_message_about_license
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение о лицензии операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[message about operating system license]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (сообщение о лицензии операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение о лицензии операционной системы - сообщение о свойстве операционной системы, в котором запрашиваются условия её распространения.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_message_about_os_property;
+			concept_operating_system;
+			concept_software_license;
+			nrel_license
+		};;
+	*);;

@@ -93,4 +93,24 @@ section_subject_domain_of_operating_systems
 	nrel_supported_architecture;
 	nrel_supported_file_system;
 	nrel_system_call;
-	nrel_thread;;
+	nrel_thread;
+	/* Классы сообщений и классы фраз ответа (ЛР2, ЛР3) */
+	concept_message_about_os_property;
+	concept_message_about_kernel;
+	concept_message_about_developer;
+	concept_message_about_file_system;
+	concept_message_about_shell;
+	concept_message_about_license;
+	concept_phrase_about_os_kernel;
+	concept_phrase_about_os_developer;
+	concept_phrase_about_os_file_system;
+	concept_phrase_about_os_shell;
+	concept_phrase_about_os_license;
+	concept_phrase_about_unknown_os_property;
+	/* Логические правила ответа на сообщения (ЛР3) */
+	lr_answer_about_os_kernel;
+	lr_answer_about_os_developer;
+	lr_answer_about_os_file_system;
+	lr_answer_about_os_shell;
+	lr_answer_about_os_license;
+	lr_answer_about_unknown_os_property;;

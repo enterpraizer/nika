@@ -1,0 +1,54 @@
+/* Фразы ответа класса concept_phrase_about_os_file_system (ЛР3).
+
+   Формат — как в рабочих фикстурах репозитория
+   problem-solver/cxx/dialogControlModule/test/TestsStructures/StandardMessageReply/phrases/.
+   Имя переменной, подставляемой в ${...}, задаётся через nrel_system_identifier.
+   Обе фразы класса используют один и тот же контур-образец @tpl_file_system. */
+
+@var_os_name_file_system = _[];;
+@var_os_name_file_system
+=> nrel_system_identifier:
+	[_os_name_file_system];;
+
+@var_file_system_name = _[];;
+@var_file_system_name
+=> nrel_system_identifier:
+	[_file_system_name];;
+
+/* Контур-образец: сообщение, выделенная в нём операционная система,
+   её русский идентификатор, значение отношения nrel_default_file_system и его идентификатор. */
+@tpl_file_system = [*
+	concept_message
+	_-> _message;;
+
+	_message
+	_-> rrel_entity:: _os_file_system;;
+
+	_os_file_system
+	_=> nrel_main_idtf::
+		@var_os_name_file_system
+		(* _<- lang_ru;; *);;
+
+	_os_file_system
+	_=> nrel_default_file_system:: _file_system;;
+
+	_file_system
+	_=> nrel_main_idtf::
+		@var_file_system_name
+		(* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_os_file_system ->
+	[Файловая система по умолчанию в ${_os_name_file_system} — ${_file_system_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_file_system;;
+	*);;
+
+concept_phrase_about_os_file_system ->
+	[По умолчанию ${_os_name_file_system} использует файловую систему ${_file_system_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_file_system;;
+	*);;
+

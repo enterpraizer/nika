@@ -1,0 +1,54 @@
+/* Фразы ответа класса concept_phrase_about_os_kernel (ЛР3).
+
+   Формат — как в рабочих фикстурах репозитория
+   problem-solver/cxx/dialogControlModule/test/TestsStructures/StandardMessageReply/phrases/.
+   Имя переменной, подставляемой в ${...}, задаётся через nrel_system_identifier.
+   Обе фразы класса используют один и тот же контур-образец @tpl_kernel. */
+
+@var_os_name_kernel = _[];;
+@var_os_name_kernel
+=> nrel_system_identifier:
+	[_os_name_kernel];;
+
+@var_kernel_name = _[];;
+@var_kernel_name
+=> nrel_system_identifier:
+	[_kernel_name];;
+
+/* Контур-образец: сообщение, выделенная в нём операционная система,
+   её русский идентификатор, значение отношения nrel_kernel и его идентификатор. */
+@tpl_kernel = [*
+	concept_message
+	_-> _message;;
+
+	_message
+	_-> rrel_entity:: _os_kernel;;
+
+	_os_kernel
+	_=> nrel_main_idtf::
+		@var_os_name_kernel
+		(* _<- lang_ru;; *);;
+
+	_os_kernel
+	_=> nrel_kernel:: _kernel;;
+
+	_kernel
+	_=> nrel_main_idtf::
+		@var_kernel_name
+		(* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_os_kernel ->
+	[Ядро операционной системы ${_os_name_kernel} — ${_kernel_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_kernel;;
+	*);;
+
+concept_phrase_about_os_kernel ->
+	[В операционной системе ${_os_name_kernel} используется ${_kernel_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_kernel;;
+	*);;
+

@@ -1,0 +1,54 @@
+/* Фразы ответа класса concept_phrase_about_os_license (ЛР3).
+
+   Формат — как в рабочих фикстурах репозитория
+   problem-solver/cxx/dialogControlModule/test/TestsStructures/StandardMessageReply/phrases/.
+   Имя переменной, подставляемой в ${...}, задаётся через nrel_system_identifier.
+   Обе фразы класса используют один и тот же контур-образец @tpl_license. */
+
+@var_os_name_license = _[];;
+@var_os_name_license
+=> nrel_system_identifier:
+	[_os_name_license];;
+
+@var_license_name = _[];;
+@var_license_name
+=> nrel_system_identifier:
+	[_license_name];;
+
+/* Контур-образец: сообщение, выделенная в нём операционная система,
+   её русский идентификатор, значение отношения nrel_license и его идентификатор. */
+@tpl_license = [*
+	concept_message
+	_-> _message;;
+
+	_message
+	_-> rrel_entity:: _os_license;;
+
+	_os_license
+	_=> nrel_main_idtf::
+		@var_os_name_license
+		(* _<- lang_ru;; *);;
+
+	_os_license
+	_=> nrel_license:: _license;;
+
+	_license
+	_=> nrel_main_idtf::
+		@var_license_name
+		(* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_os_license ->
+	[Операционная система ${_os_name_license} распространяется по лицензии ${_license_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_license;;
+	*);;
+
+concept_phrase_about_os_license ->
+	[Условия распространения ${_os_name_license} определяет лицензия ${_license_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_license;;
+	*);;
+

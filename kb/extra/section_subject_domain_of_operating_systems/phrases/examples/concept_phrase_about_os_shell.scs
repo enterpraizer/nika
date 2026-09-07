@@ -1,0 +1,54 @@
+/* Фразы ответа класса concept_phrase_about_os_shell (ЛР3).
+
+   Формат — как в рабочих фикстурах репозитория
+   problem-solver/cxx/dialogControlModule/test/TestsStructures/StandardMessageReply/phrases/.
+   Имя переменной, подставляемой в ${...}, задаётся через nrel_system_identifier.
+   Обе фразы класса используют один и тот же контур-образец @tpl_shell. */
+
+@var_os_name_shell = _[];;
+@var_os_name_shell
+=> nrel_system_identifier:
+	[_os_name_shell];;
+
+@var_shell_name = _[];;
+@var_shell_name
+=> nrel_system_identifier:
+	[_shell_name];;
+
+/* Контур-образец: сообщение, выделенная в нём операционная система,
+   её русский идентификатор, значение отношения nrel_default_shell и его идентификатор. */
+@tpl_shell = [*
+	concept_message
+	_-> _message;;
+
+	_message
+	_-> rrel_entity:: _os_shell;;
+
+	_os_shell
+	_=> nrel_main_idtf::
+		@var_os_name_shell
+		(* _<- lang_ru;; *);;
+
+	_os_shell
+	_=> nrel_default_shell:: _shell;;
+
+	_shell
+	_=> nrel_main_idtf::
+		@var_shell_name
+		(* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_os_shell ->
+	[Оболочка по умолчанию в ${_os_name_shell} — ${_shell_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_shell;;
+	*);;
+
+concept_phrase_about_os_shell ->
+	[В качестве оболочки по умолчанию ${_os_name_shell} использует ${_shell_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_shell;;
+	*);;
+

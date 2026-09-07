@@ -1,0 +1,33 @@
+/* Класс фраз ответа. Конкретные фразы класса и связанные с ними
+   структуры-образцы описаны в phrases/examples/concept_phrase_about_unknown_os_property.gwf */
+
+concept_phrase_about_unknown_os_property
+<- sc_node_class;
+=> nrel_main_idtf:
+	[фраза о неизвестном свойстве операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[phrase about unknown operating system property]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_phrase;
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (фраза о неизвестном свойстве операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фраза о неизвестном свойстве операционной системы - фраза, сообщающая, что в базе знаний отсутствует запрошенное свойство указанной операционной системы. Используется правилом ответа третьего приоритета, когда правило второго приоритета не может собрать ни одну фразу с шаблоном.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_phrase;
+			concept_message_about_os_property
+		};;
+	*);;

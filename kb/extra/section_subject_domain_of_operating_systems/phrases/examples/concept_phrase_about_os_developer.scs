@@ -1,0 +1,54 @@
+/* Фразы ответа класса concept_phrase_about_os_developer (ЛР3).
+
+   Формат — как в рабочих фикстурах репозитория
+   problem-solver/cxx/dialogControlModule/test/TestsStructures/StandardMessageReply/phrases/.
+   Имя переменной, подставляемой в ${...}, задаётся через nrel_system_identifier.
+   Обе фразы класса используют один и тот же контур-образец @tpl_developer. */
+
+@var_os_name_developer = _[];;
+@var_os_name_developer
+=> nrel_system_identifier:
+	[_os_name_developer];;
+
+@var_developer_name = _[];;
+@var_developer_name
+=> nrel_system_identifier:
+	[_developer_name];;
+
+/* Контур-образец: сообщение, выделенная в нём операционная система,
+   её русский идентификатор, значение отношения nrel_developer и его идентификатор. */
+@tpl_developer = [*
+	concept_message
+	_-> _message;;
+
+	_message
+	_-> rrel_entity:: _os_developer;;
+
+	_os_developer
+	_=> nrel_main_idtf::
+		@var_os_name_developer
+		(* _<- lang_ru;; *);;
+
+	_os_developer
+	_=> nrel_developer:: _developer;;
+
+	_developer
+	_=> nrel_main_idtf::
+		@var_developer_name
+		(* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_os_developer ->
+	[Операционную систему ${_os_name_developer} разрабатывает ${_developer_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_developer;;
+	*);;
+
+concept_phrase_about_os_developer ->
+	[Разработчик операционной системы ${_os_name_developer} — ${_developer_name}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_developer;;
+	*);;
+
