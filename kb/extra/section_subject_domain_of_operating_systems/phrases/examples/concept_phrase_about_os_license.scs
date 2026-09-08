@@ -39,14 +39,14 @@
 *];;
 
 concept_phrase_about_os_license ->
-	[Операционная система ${_os_name_license} распространяется по лицензии ${_license_name}.]
+	[Условия распространения ${_os_name_license} — ${_license_name}.]
 	(*
 		<- lang_ru;;
 		=> nrel_phrase_template: @tpl_license;;
 	*);;
 
 concept_phrase_about_os_license ->
-	[Условия распространения ${_os_name_license} определяет лицензия ${_license_name}.]
+	[Для операционной системы ${_os_name_license} действует ${_license_name}.]
 	(*
 		<- lang_ru;;
 		=> nrel_phrase_template: @tpl_license;;

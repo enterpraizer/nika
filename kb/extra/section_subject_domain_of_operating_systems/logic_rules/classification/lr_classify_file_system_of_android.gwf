@@ -13,8 +13,8 @@
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="90000080" parent="90000016" left="0" top="0" right="20" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="240" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
-        <node type="node/var/perm/general" idtf="_developer_of_debian_link_1" shapeColor="0" id="90000096" parent="90000016" left="0" top="0" right="236" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="320" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Кто разработчик Debian?]]></content>
+        <node type="node/var/perm/general" idtf="_file_system_of_android_link_1" shapeColor="0" id="90000096" parent="90000016" left="0" top="0" right="260" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="320" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Какая файловая система в Android?]]></content>
         </node>
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000112" parent="90000016" id_b="90000032" id_e="90000048" b_x="130" b_y="110" e_x="130" e_y="190" dotBBalance="0" dotEBalance="0">
             <points />
@@ -28,7 +28,7 @@
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000160" parent="90000016" id_b="90000080" id_e="90000096" b_x="330" b_y="240" e_x="330" e_y="320" dotBBalance="0" dotEBalance="0">
             <points />
         </pair>
-        <contour type="contour/const/perm" idtf="if_developer_of_debian_1" shapeColor="0" id="90000016" parent="0">
+        <contour type="contour/const/perm" idtf="if_file_system_of_android_1" shapeColor="0" id="90000016" parent="0">
             <points>
                 <point x="60" y="60" />
                 <point x="60" y="380" />
@@ -48,8 +48,8 @@
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="90000240" parent="90000176" left="0" top="0" right="20" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="600" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
-        <node type="node/var/perm/general" idtf="_developer_of_debian_link_2" shapeColor="0" id="90000256" parent="90000176" left="0" top="0" right="236" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="680" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Кто разрабатывает Debian?]]></content>
+        <node type="node/var/perm/general" idtf="_file_system_of_android_link_2" shapeColor="0" id="90000256" parent="90000176" left="0" top="0" right="260" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="680" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Какая файловая система у Android?]]></content>
         </node>
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000272" parent="90000176" id_b="90000192" id_e="90000208" b_x="130" b_y="470" e_x="130" e_y="550" dotBBalance="0" dotEBalance="0">
             <points />
@@ -63,7 +63,7 @@
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000320" parent="90000176" id_b="90000240" id_e="90000256" b_x="330" b_y="600" e_x="330" e_y="680" dotBBalance="0" dotEBalance="0">
             <points />
         </pair>
-        <contour type="contour/const/perm" idtf="if_developer_of_debian_2" shapeColor="0" id="90000176" parent="0">
+        <contour type="contour/const/perm" idtf="if_file_system_of_android_2" shapeColor="0" id="90000176" parent="0">
             <points>
                 <point x="60" y="420" />
                 <point x="60" y="740" />
@@ -83,8 +83,8 @@
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="90000400" parent="90000336" left="0" top="0" right="20" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="960" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
-        <node type="node/var/perm/general" idtf="_developer_of_debian_link_3" shapeColor="0" id="90000416" parent="90000336" left="0" top="0" right="236" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="1040" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Кто создал Debian?]]></content>
+        <node type="node/var/perm/general" idtf="_file_system_of_android_link_3" shapeColor="0" id="90000416" parent="90000336" left="0" top="0" right="260" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="1040" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Какая файловая система используется в Android?]]></content>
         </node>
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000432" parent="90000336" id_b="90000352" id_e="90000368" b_x="130" b_y="830" e_x="130" e_y="910" dotBBalance="0" dotEBalance="0">
             <points />
@@ -98,7 +98,7 @@
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000480" parent="90000336" id_b="90000400" id_e="90000416" b_x="330" b_y="960" e_x="330" e_y="1040" dotBBalance="0" dotEBalance="0">
             <points />
         </pair>
-        <contour type="contour/const/perm" idtf="if_developer_of_debian_3" shapeColor="0" id="90000336" parent="0">
+        <contour type="contour/const/perm" idtf="if_file_system_of_android_3" shapeColor="0" id="90000336" parent="0">
             <points>
                 <point x="60" y="780" />
                 <point x="60" y="1100" />
@@ -118,8 +118,8 @@
         <node type="node/var/perm/general" idtf="" shapeColor="0" id="90000560" parent="90000496" left="0" top="0" right="20" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="1320" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
-        <node type="node/var/perm/general" idtf="_developer_of_debian_link_4" shapeColor="0" id="90000576" parent="90000496" left="0" top="0" right="236" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="1400" haveBus="false" idtf_pos="0">
-            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Кто разработчик Debian]]></content>
+        <node type="node/var/perm/general" idtf="_file_system_of_android_link_4" shapeColor="0" id="90000576" parent="90000496" left="0" top="0" right="260" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="330" y="1400" haveBus="false" idtf_pos="0">
+            <content type="1" mime_type="content/term" content_visibility="true" file_name=""><![CDATA[Какая файловая система в Android]]></content>
         </node>
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000592" parent="90000496" id_b="90000512" id_e="90000528" b_x="130" b_y="1190" e_x="130" e_y="1270" dotBBalance="0" dotEBalance="0">
             <points />
@@ -133,7 +133,7 @@
         <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="90000640" parent="90000496" id_b="90000560" id_e="90000576" b_x="330" b_y="1320" e_x="330" e_y="1400" dotBBalance="0" dotEBalance="0">
             <points />
         </pair>
-        <contour type="contour/const/perm" idtf="if_developer_of_debian_4" shapeColor="0" id="90000496" parent="0">
+        <contour type="contour/const/perm" idtf="if_file_system_of_android_4" shapeColor="0" id="90000496" parent="0">
             <points>
                 <point x="60" y="1140" />
                 <point x="60" y="1460" />
@@ -141,7 +141,7 @@
                 <point x="700" y="1140" />
             </points>
         </contour>
-        <node type="node/const/perm/group" idtf="concept_message_about_developer" shapeColor="0" id="90000672" parent="90000656" left="0" top="0" right="268" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="130" y="1550" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="concept_message_about_file_system" shapeColor="0" id="90000672" parent="90000656" left="0" top="0" right="284" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="130" y="1550" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
         <node type="node/const/perm/group" idtf="concept_message_about_os_property" shapeColor="0" id="90000688" parent="90000656" left="0" top="0" right="284" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="400" y="1550" haveBus="false" idtf_pos="0">
@@ -150,7 +150,7 @@
         <node type="node/var/perm/general" idtf="_message" shapeColor="0" id="90000704" parent="90000656" left="0" top="0" right="84" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="200" y="1640" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
-        <node type="node/const/perm/general" idtf="debian" shapeColor="0" id="90000720" parent="90000656" left="0" top="0" right="68" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="200" y="1740" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="android" shapeColor="0" id="90000720" parent="90000656" left="0" top="0" right="76" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="200" y="1740" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
         <node type="node/const/perm/role" idtf="rrel_entity" shapeColor="0" id="90000736" parent="90000656" left="0" top="0" right="108" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="430" y="1690" haveBus="false" idtf_pos="0">
@@ -251,7 +251,7 @@
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="90001200" parent="0" id_b="90001184" id_e="90000656" b_x="1050" b_y="1500" e_x="380.0" e_y="1645.0" dotBBalance="0" dotEBalance="0">
             <points />
         </pair>
-        <node type="node/const/perm/general" idtf="lr_classify_developer_of_debian_message" shapeColor="0" id="90001216" parent="0" left="0" top="0" right="332" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="1100" y="620" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/general" idtf="lr_classify_file_system_of_android_message" shapeColor="0" id="90001216" parent="0" left="0" top="0" right="356" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="1100" y="620" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name="" />
         </node>
         <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="90001232" parent="0" id_b="90000816" id_e="90000656" b_x="850" b_y="380" e_x="380.0" e_y="1645.0" dotBBalance="0" dotEBalance="0">
