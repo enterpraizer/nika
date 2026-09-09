@@ -1,0 +1,34 @@
+/* Класс фраз ответа (ЛР4). Конкретные фразы и структура-образец —
+   в phrases/examples/concept_phrase_about_supported_os.scs */
+
+concept_phrase_about_supported_os
+<- sc_node_class;
+=> nrel_main_idtf:
+	[фраза о поддерживаемой операционной системе]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[phrase about supported operating system]
+	(* <- lang_en;; *);
+<= nrel_inclusion:
+	concept_phrase;
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (фраза о поддерживаемой операционной системе)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фраза о поддерживаемой операционной системе - фраза, сообщающая актуальный выпуск операционной системы и срок его сопровождения.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_phrase;
+			concept_supported_operating_system;
+			concept_operating_system_release
+		};;
+	*);;

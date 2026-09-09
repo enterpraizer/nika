@@ -1,0 +1,47 @@
+/* Отношение введено агентом актуализации сведений о поддержке (ЛР4). */
+
+nrel_data_retrieval_date
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[дата получения сведений*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[data retrieval date*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_operating_system_release;
+=> nrel_second_domain: file;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_operating_system_release;
+			file
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (дата получения сведений*)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Дата получения сведений* - отношение, связывающее выпуск операционной системы с датой, когда сведения о нём были получены из внешнего источника и погружены в базу знаний.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_operating_system_release;
+			file
+		};;
+	*);;

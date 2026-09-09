@@ -1,0 +1,47 @@
+/* Отношение введено агентом актуализации сведений о поддержке (ЛР4). */
+
+nrel_endoflife_cycle
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[цикл выпуска в сервисе endoflife.date*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[endoflife.date release cycle*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_operating_system;
+=> nrel_second_domain: file;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_operating_system;
+			file
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (цикл выпуска в сервисе endoflife.date*)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Цикл выпуска в сервисе endoflife.date* - отношение, закрепляющее за экземпляром операционной системы конкретный цикл выпуска во внешнем сервисе. Если отношение не задано, агент берёт самый новый цикл продукта.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_operating_system;
+			nrel_endoflife_idtf
+		};;
+	*);;

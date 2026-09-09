@@ -1,0 +1,66 @@
+/* Фразы ответа класса concept_phrase_about_unsupported_os (ЛР4).
+
+   Образцы опираются на знания, погружённые агентом OsSupportAgent,
+   и на выведенное им членство операционной системы в классе
+   concept_unsupported_operating_system.
+
+   ВАЖНО: в каждом образце ровно две подставляемые переменные.
+   При трёх переменных агент генерации фраз не находит конструкцию
+   и выдаёт «Answer isn't found» — проверено экспериментом. */
+
+@var_os_name_unsup1 = _[];;
+@var_os_name_unsup1
+=> nrel_system_identifier:
+	[_os_name_unsup1];;
+
+@var_eol_unsup1 = _[];;
+@var_eol_unsup1
+=> nrel_system_identifier:
+	[_eol_unsup1];;
+
+/* Образец: сообщение, сущность, выведенный статус, идентификатор
+   операционной системы и дата окончания поддержки её выпуска. */
+@tpl_unsup1 = [*
+	concept_message _-> _message;;
+	_message _-> rrel_entity:: _os_unsup1;;
+	concept_unsupported_operating_system _-> _os_unsup1;;
+	_os_unsup1 _=> nrel_main_idtf:: @var_os_name_unsup1 (* _<- lang_ru;; *);;
+	_os_unsup1 _=> nrel_actual_release:: _release_unsup1;;
+	_release_unsup1 _=> nrel_end_of_life_date:: @var_eol_unsup1 (* _<- lang_ru;; *);;
+*];;
+
+@var_os_name_unsup2 = _[];;
+@var_os_name_unsup2
+=> nrel_system_identifier:
+	[_os_name_unsup2];;
+
+@var_release_name_unsup2 = _[];;
+@var_release_name_unsup2
+=> nrel_system_identifier:
+	[_release_name_unsup2];;
+
+/* Образец: сообщение, сущность, выведенный статус, идентификатор
+   операционной системы и идентификатор её актуального выпуска. */
+@tpl_unsup2 = [*
+	concept_message _-> _message;;
+	_message _-> rrel_entity:: _os_unsup2;;
+	concept_unsupported_operating_system _-> _os_unsup2;;
+	_os_unsup2 _=> nrel_main_idtf:: @var_os_name_unsup2 (* _<- lang_ru;; *);;
+	_os_unsup2 _=> nrel_actual_release:: _release_unsup2;;
+	_release_unsup2 _=> nrel_main_idtf:: @var_release_name_unsup2 (* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_unsupported_os ->
+	[Поддержка ${_os_name_unsup1} завершена ${_eol_unsup1}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_unsup1;;
+	*);;
+
+concept_phrase_about_unsupported_os ->
+	[${_os_name_unsup2}: последний выпуск — ${_release_name_unsup2}, сопровождение уже прекращено.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_unsup2;;
+	*);;
+

@@ -1,0 +1,33 @@
+/* Класс сообщений: вопрос о поддержке операционной системы (ЛР4).
+   Ответ на такое сообщение готовит агент OsSupportAgent, погружая
+   сведения из внешнего сервиса, и правило lr_answer_about_os_support. */
+
+concept_message_about_support
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сообщение о поддержке операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[message about operating system support]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (сообщение о поддержке операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сообщение о поддержке операционной системы - сообщение о свойстве операционной системы, в котором запрашивается срок сопровождения её актуального выпуска.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_message_about_os_property;
+			concept_operating_system;
+			concept_operating_system_release
+		};;
+	*);;

@@ -1,0 +1,47 @@
+/* Отношение введено агентом актуализации сведений о поддержке (ЛР4). */
+
+nrel_endoflife_idtf
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[идентификатор в сервисе endoflife.date*]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[endoflife.date identifier*]
+	(* <- lang_en;; *);
+=> nrel_first_domain: concept_operating_system;
+=> nrel_second_domain: file;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+			concept_operating_system;
+			file
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (идентификатор в сервисе endoflife.date*)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Идентификатор в сервисе endoflife.date* - отношение, связывающее операционную систему с её обозначением в открытом сервисе сведений о жизненном цикле программного обеспечения. Значение используется агентом для построения адреса запроса.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_operating_system;
+			file
+		};;
+	*);;

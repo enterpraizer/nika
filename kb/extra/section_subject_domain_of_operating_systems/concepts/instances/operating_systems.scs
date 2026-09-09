@@ -133,3 +133,25 @@ qnx
 	(* <- lang_ru;; *);
 => nrel_kernel: qnx_neutrino_kernel;
 => nrel_license: proprietary_license;;
+
+/* Windows 7 добавлен при выполнении ЛР4: это экземпляр операционной
+   системы, поддержка которой завершена, что позволяет продемонстрировать
+   обе ветки вывода агента актуализации сведений о поддержке. */
+
+windows_7
+<- concept_operating_system;
+<- concept_desktop_operating_system;
+=> nrel_main_idtf:
+	[Windows 7]
+	(* <- lang_ru;; *);
+=> nrel_note:
+	[Настольная операционная система корпорации Microsoft, выпущенная в 2009 году. Построена на ядре Windows NT, расширенная поддержка прекращена в январе 2020 года]
+	(* <- lang_ru;; *);
+=> nrel_kernel: windows_nt_kernel;
+=> nrel_operating_system_family: family_windows_nt;
+=> nrel_developer: microsoft;
+=> nrel_license: proprietary_license;
+=> nrel_default_file_system: ntfs;
+=> nrel_supported_file_system: fat32;
+=> nrel_bootloader: windows_boot_manager;
+=> nrel_supported_architecture: x86_64;;

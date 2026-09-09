@@ -22,6 +22,7 @@ concept_message_about_os_property
 	concept_message_about_file_system;
 	concept_message_about_shell;
 	concept_message_about_license;
+	concept_message_about_support;
 <- rrel_key_sc_element:
 	...
 	(*

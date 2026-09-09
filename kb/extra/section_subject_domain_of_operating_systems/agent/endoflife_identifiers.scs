@@ -1,0 +1,26 @@
+/* Привязка экземпляров операционных систем к обозначениям в открытом
+   сервисе endoflife.date. Значение nrel_endoflife_idtf подставляется
+   агентом в адрес запроса https://endoflife.date/api/<значение>.json
+
+   Если задан nrel_endoflife_cycle, агент берёт именно этот цикл выпуска;
+   иначе — самый новый цикл продукта.
+
+   У QNX привязки нет намеренно: сервис не содержит сведений об этой
+   системе, и на вопрос о её поддержке отвечает правило-заглушка. */
+
+ubuntu   => nrel_endoflife_idtf: [ubuntu];;
+debian   => nrel_endoflife_idtf: [debian];;
+android  => nrel_endoflife_idtf: [android];;
+macos    => nrel_endoflife_idtf: [macos];;
+freebsd  => nrel_endoflife_idtf: [freebsd];;
+
+windows_11
+=> nrel_endoflife_idtf: [windows];;
+
+windows_server_2022
+=> nrel_endoflife_idtf: [windows-server];
+=> nrel_endoflife_cycle: [2022];;
+
+windows_7
+=> nrel_endoflife_idtf: [windows];
+=> nrel_endoflife_cycle: [7-sp1];;

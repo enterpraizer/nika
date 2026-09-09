@@ -1,0 +1,31 @@
+/* Понятие введено агентом актуализации сведений о поддержке (ЛР4). */
+
+concept_lts_release
+<- sc_node_class;
+<= nrel_inclusion:
+	concept_operating_system_release;
+=> nrel_main_idtf:
+	[выпуск с долгосрочной поддержкой]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[long term support release]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (выпуск с долгосрочной поддержкой)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Выпуск с долгосрочной поддержкой - выпуск операционной системы, для которого производитель объявил продлённый срок сопровождения.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_operating_system_release
+		};;
+	*);;

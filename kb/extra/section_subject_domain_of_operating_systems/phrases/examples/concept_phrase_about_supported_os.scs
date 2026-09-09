@@ -1,0 +1,66 @@
+/* Фразы ответа класса concept_phrase_about_supported_os (ЛР4).
+
+   Образцы опираются на знания, погружённые агентом OsSupportAgent,
+   и на выведенное им членство операционной системы в классе
+   concept_supported_operating_system.
+
+   ВАЖНО: в каждом образце ровно две подставляемые переменные.
+   При трёх переменных агент генерации фраз не находит конструкцию
+   и выдаёт «Answer isn't found» — проверено экспериментом. */
+
+@var_os_name_sup1 = _[];;
+@var_os_name_sup1
+=> nrel_system_identifier:
+	[_os_name_sup1];;
+
+@var_eol_sup1 = _[];;
+@var_eol_sup1
+=> nrel_system_identifier:
+	[_eol_sup1];;
+
+/* Образец: сообщение, сущность, выведенный статус, идентификатор
+   операционной системы и дата окончания поддержки её выпуска. */
+@tpl_sup1 = [*
+	concept_message _-> _message;;
+	_message _-> rrel_entity:: _os_sup1;;
+	concept_supported_operating_system _-> _os_sup1;;
+	_os_sup1 _=> nrel_main_idtf:: @var_os_name_sup1 (* _<- lang_ru;; *);;
+	_os_sup1 _=> nrel_actual_release:: _release_sup1;;
+	_release_sup1 _=> nrel_end_of_life_date:: @var_eol_sup1 (* _<- lang_ru;; *);;
+*];;
+
+@var_os_name_sup2 = _[];;
+@var_os_name_sup2
+=> nrel_system_identifier:
+	[_os_name_sup2];;
+
+@var_release_name_sup2 = _[];;
+@var_release_name_sup2
+=> nrel_system_identifier:
+	[_release_name_sup2];;
+
+/* Образец: сообщение, сущность, выведенный статус, идентификатор
+   операционной системы и идентификатор её актуального выпуска. */
+@tpl_sup2 = [*
+	concept_message _-> _message;;
+	_message _-> rrel_entity:: _os_sup2;;
+	concept_supported_operating_system _-> _os_sup2;;
+	_os_sup2 _=> nrel_main_idtf:: @var_os_name_sup2 (* _<- lang_ru;; *);;
+	_os_sup2 _=> nrel_actual_release:: _release_sup2;;
+	_release_sup2 _=> nrel_main_idtf:: @var_release_name_sup2 (* _<- lang_ru;; *);;
+*];;
+
+concept_phrase_about_supported_os ->
+	[${_os_name_sup1} поддерживается, окончание поддержки: ${_eol_sup1}.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_sup1;;
+	*);;
+
+concept_phrase_about_supported_os ->
+	[Актуальный выпуск ${_os_name_sup2} — ${_release_name_sup2}. Эта система сопровождается.]
+	(*
+		<- lang_ru;;
+		=> nrel_phrase_template: @tpl_sup2;;
+	*);;
+

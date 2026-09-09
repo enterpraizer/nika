@@ -113,4 +113,22 @@ section_subject_domain_of_operating_systems
 	lr_answer_about_os_file_system;
 	lr_answer_about_os_shell;
 	lr_answer_about_os_license;
-	lr_answer_about_unknown_os_property;;
+	lr_answer_about_unknown_os_property;
+	/* Агент актуализации сведений о поддержке (ЛР4) */
+	action_check_os_support;
+	concept_message_about_support;
+	concept_operating_system_release;
+	concept_supported_operating_system;
+	concept_unsupported_operating_system;
+	concept_lts_release;
+	nrel_endoflife_idtf;
+	nrel_endoflife_cycle;
+	nrel_actual_release;
+	nrel_release_date;
+	nrel_end_of_life_date;
+	nrel_latest_version;
+	nrel_data_retrieval_date;
+	concept_phrase_about_supported_os;
+	concept_phrase_about_unsupported_os;
+	lr_answer_about_supported_os;
+	lr_answer_about_unsupported_os;;

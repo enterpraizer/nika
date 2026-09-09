@@ -1,0 +1,29 @@
+/* Понятие введено агентом актуализации сведений о поддержке (ЛР4). */
+
+concept_operating_system_release
+<- sc_node_class;
+=> nrel_main_idtf:
+	[выпуск операционной системы]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[operating system release]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (выпуск операционной системы)]
+		(* <- lang_ru;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Выпуск операционной системы - отдельная версия операционной системы, имеющая собственную дату выхода и собственный срок поддержки.]
+			(* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_operating_system
+		};;
+	*);;
